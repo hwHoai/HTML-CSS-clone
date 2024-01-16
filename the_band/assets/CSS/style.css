@@ -3,6 +3,9 @@
     margin: 0px;
     box-sizing: border-box;
 }
+.clear {
+    clear: both;
+}
 
 html {
     font-family: Arial, Helvetica, sans-serif;
@@ -96,7 +99,7 @@ html {
 
 #slider{
     padding-top: 50%;
-    background: url('/assets/img/slider/slider_1.jpeg') top center / cover no-repeat;
+    background: url('/HTML-CSS-clone/the_band/assets/img/slider/slider_1.jpeg') top center / cover no-repeat;
     position: relative;
     display: block;
 }
@@ -132,13 +135,14 @@ html {
     transform: translateX(-50%);
 }
 
-#band-name {
+.title {
     margin: 10px 0px;
+    font-size: 30px;
     text-align: center;
     text-transform: uppercase;
 }
 
-#slogan {
+.slogan {
     margin: 15px 0;
     text-align: center;
     font-style: italic;
@@ -183,90 +187,105 @@ html {
 
 }
 
-#tour{
+#tour {
     background-color: #000;
-    display: block;
-    min-height: 1000px;
     width: 100%;
+}
+
+#tour #tour-content {
+    padding: 64px 16px ;
     color: #fff;
-
+    margin: 0 551px;
 }
 
-#tour-content {
-    padding: 64px 16px;
-    margin: 0 560px;
-}
-
-#tour #tour-header {
-    text-align: center;
-    margin: 10px 0;
-
-}
-
-#tour #tour-slogan {
-    padding: 15px 0;
-    text-align: center;
-}
-
-#tour-content #ticket-status {
-    list-style: none;
-    background-color: #fff;
-}
-
-#ticket-status .ticket-status {
+.ticket-list {
     display: block;
+    background-color: #fff;
     border-width: 0 0 1px 0;
     border-style: solid;
-    border-color: rgb(221, 221, 221);
-    padding:8px 16px;
+    border-color:rgb(213, 223, 233);
+    color: #757575;
+    padding: 8px 16px;
+    line-height: 22.5px;
 }
 
-#month, .status {
+.ticket-list .tic-status {
     display: inline-block;
-}
-
-.ticket-status #month {
-    color: black;
-    opacity: 0.5;
-}
-
-.status {
-    background-color: red;
     padding: 0 8px;
-    margin-left: 16px;
+    margin: 0 0 0 16px;
+    background-color: #f44336;
+    color: #fff;
 }
 
-#tour-info {
-    display: inline-block;
-}
-
-#tour-info img {
-    width: 245px;
-    height: 183px;
-}
-/* #tour-info {
-    padding:8px 32px;
-    margin: 0 0 -16px;
-}
-
-#tour-info .tour-info {
-    position: relative;
-    display: inline-block;
+.ticket-list .tic-remain {
+    float: right;
+    margin: 0 16px 0 0;
     padding: 0 8px;
     background-color: #000;
-    margin: 0 0 16px;
-    left: -8px;
-    list-style-type: none;
-
+    border-radius: 50%;
+    color: #fff;
 }
 
-#tour-info img {
-    width: 245px;
-    height: 183px;
 
-} */
+.tour-list {
+    float: left;
+    width: 33.33333%;
+    padding: 32px 8px;
+}
+
+#tour-list {
+    margin: 0 -8px 16px -8px;
+}
+
+.tour-list .tour-img {
+    display: block;
+    width: 100%;
+}
+
+.tour-list .tour-img:hover {
+    opacity: 0.6;
+}
+
+.tour-info {
+    background-color: #fff;
+    color: #000;
+    padding: 16px 16px;
+}
+
+.tour-info .city {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.tour-info .time {
+    font-size: 15px;
+    margin: 15px 0;
+    opacity: 0.6;
+}
+
+.tour-info .description {
+    font-size: 15px;
+    margin: 15px 0;
+    line-height: 22.5px;
+}
+
+.tour-info .buy-btn {
+    font-size: 15px;
+    display: block;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+}
+
+.tour-info .buy-btn:hover {
+    background-color: #757575;
+    cursor: pointer;
+}
 #contact{
-
+    padding: 64px 18px;
+    margin: 0 521.5px;
 }
 
 #image{
