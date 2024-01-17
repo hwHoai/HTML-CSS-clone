@@ -89,7 +89,7 @@ html {
 }
 
 #header .search-icon:hover {
-    background-color: orange221;
+    background-color: #f44336;
     cursor: pointer;
 }
 
@@ -140,6 +140,7 @@ html {
     font-size: 30px;
     text-align: center;
     text-transform: uppercase;
+    letter-spacing: 5px;
 }
 
 .slogan {
@@ -288,10 +289,76 @@ html {
     margin: 0 521.5px;
 }
 
-#image{
+#contact-protcl {
+    display: inline-block;
+}
 
+#contact-protcl i {
+    display: block;
+}
+
+.email-icon,
+.mobile-icon, 
+.location-icon {
+    padding: 5px;
+    display: inline-block;
+    font-size: 18px;
+    letter-spacing: 0.001px;
+}
+
+ 
+
+#contact-form {
+    float: right;
+
+}
+
+.contact-form {
+    border: #757575 1px solid;
+    padding: 8px;
+    margin: 0 2px 0 2px;
+    line-height: 22.5px;
+    font-size: 15px;
+}
+
+.fan-message {
+    display: block;
+    width: 99.3%;
+    margin-top: 6px;
+}
+
+#send-btn {
+    border: none;
+    padding: 8px 16px;
+    margin: 16px 0;
+    background-color: #000;
+    color: #fff;
+    float: right;
+}
+
+#image{
+    width: 100%;
+    display: block;
 }
 
 #footer{
-
+    display: block;
+    text-align: center;
+    padding: 64px 16px;
 }
+
+.brand-icon {
+    display: inline-block;
+    width: 24px;
+    font-size: 24px;
+    margin: 2px;
+    opacity: 0.6;
+}
+
+#footer p {
+    display: block;
+    margin: 15px 0;
+    opacity: 0.5;
+}
+
+
