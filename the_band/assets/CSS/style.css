@@ -339,6 +339,7 @@ html {
 #image{
     width: 100%;
     display: block;
+    filter: grayscale(50%);
 }
 
 #footer{
@@ -360,5 +361,102 @@ html {
     margin: 15px 0;
     opacity: 0.5;
 }
+
+#modal-ticket-form {
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+#ticket-form {
+    background-color: rgb(255, 255, 255);
+    color: #000;
+    position: relative;
+}
+
+#ticket-form-header {
+    width: 868px;
+    padding: 32px 16px;
+    background-color: rgb(0, 150, 136) ;
+    color: white;
+    text-align: center;
+
+}
+
+.close-icon {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    padding: 8px 16px;
+    line-height: 36px !important;
+}
+
+.close-icon:hover {
+    background-color: #c9c8c8;
+    color: #000;
+}
+
+.ticket-icon {
+    font-size: 30px;
+    margin-right: 16px;
+}
+
+#ticket-form-header p {
+    line-height: 45px;
+    margin: 10px 0;
+    font-size: 30px;
+    display: inline-block;
+    letter-spacing: 5px;
+}
+
+#body {
+    padding: 0 16px;
+}
+#body p {
+    margin: 10px 0;
+    display: inline-block;
+    font-size: 15px;
+}
+
+#body input {
+    display: block;
+    width: 100%;
+    height:40.5px;
+    line-height: 22.5px;
+    padding: 8px;
+    border:rgb(204, 204, 204) 1px solid;
+}
+
+#body button {
+    border: none;
+    width: 100%;
+    padding: 16px;
+    margin: 16px 0;
+    background-color: #009688;
+    color: #fff;
+    font-size: 15px;
+}
+
+#body button:hover {
+    background-color: #c9c8c8;
+    color: #000;
+}
+
+#ticket-form-footer {
+    float: right;
+    margin: 15px;
+}
+
+#ticket-form-footer a {
+    color: #2196f3;
+}
+
 
 
